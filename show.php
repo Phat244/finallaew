@@ -50,6 +50,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 <table class="table table-bordered">
   <thead>
     <tr class="bg-success">
+      <th width="50"> <div align="center"> No.</div></th>
       <th width="100"> <div align="center">Name</div></th>
       <th width="400"> <div align="center">Comment </div></th>
       <th width="200"> <div align="center">Link </div></th>
@@ -61,12 +62,13 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 <?php while($Result = mysqli_fetch_array($res))
 {?>
     <tr>
+      <td><?php echo $Result['ID'];?></td>
       <td><?php echo $Result['Name'];?></td>
       <td><?php echo $Result['Comment'];?></td>
       <td><?php echo $Result['Link'];?></td>
       <td>
         <form method="POST" action="delete.php">
-         <input type="hidden" name="id" value="<?php echo $Result['ID']; ?>" />
+<!--          <input type="hidden" name="id" value="<?php echo $Result['ID']; ?>" /> -->
         <button type="submit" class="btn btn-danger" >Delete</button>
         </form>
         <form method="POST" action="edit.php">
