@@ -43,16 +43,16 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
   <br>
   <br>
 <div class="container">
-<h1 class="display-1">LAB Database Show</h1>
+<h1 class="display-1">DataBase ITF Lab</h1>
 </div>
   
 <div class="container">
 <table class="table table-bordered">
   <thead>
     <tr class="bg-success">
-      <th width="50"> <div align="center">Name</div></th>
-      <th width="500"> <div align="center">Comment </div></th>
-      <th width="100"> <div align="center">Link </div></th>
+      <th width="100"> <div align="center">Name</div></th>
+      <th width="400"> <div align="center">Comment </div></th>
+      <th width="200"> <div align="center">Link </div></th>
       <th width="200"> <div align="center">action </div></th>
     </tr>
   </thead>
@@ -71,9 +71,9 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
         </form>
         <form method="POST" action="edit.php">
          <input type="hidden" name="id" value="<?php echo $Result['ID']; ?>" />
-          <input type="hidden" name="name" value="<?php echo $Result['name']; ?>" />
-          <input type="hidden" name="comment" value="<?php echo $Result['comment']; ?>" />
-          <input type="hidden" name="link" value="<?php echo $Result['link']; ?>" />
+          <input type="hidden" name="name" value="<?php echo $Result['Name']; ?>" />
+          <input type="hidden" name="comment" value="<?php echo $Result['Comment']; ?>" />
+          <input type="hidden" name="link" value="<?php echo $Result['Link']; ?>" />
         <button type="submit" class="btn btn-warning" >Edit</button>
         </form>
       </td>
