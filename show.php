@@ -20,7 +20,7 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
-<nav class="alert alert-primary" role="alert">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand" href="show.php">Start Bootstrap</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 <div class="container">
 <table class="table table-bordered">
   <thead>
-    <tr class="bg-success">
+    <tr class="alert alert-primary" role="alert">
       <th width="50"> <div align="center"> No.</div></th>
       <th width="100"> <div align="center">Name</div></th>
       <th width="400"> <div align="center">Comment </div></th>
