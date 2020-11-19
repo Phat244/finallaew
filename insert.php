@@ -27,7 +27,7 @@ $comment = $_POST['comment'];
 $link = $_POST['link'];
 
 
-$sql = "INSERT INTO guestbook (Name , Comment , Link) VALUES ('$name', '$comment', '$link')";
+$sql = "INSERT INTO guestbook (Name , Comment , Link) VALUES ('$Name', '$Comment', '$Link')";
 
 
 if (mysqli_query($conn, $sql)) {
