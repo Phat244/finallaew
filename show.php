@@ -20,7 +20,7 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
-<nav class="alert alert-primary" role="alert" id="mainNav">
+<nav class="alert alert-primary" role="alert">
     <div class="container">
       <a class="navbar-brand" href="show.php">Start Bootstrap</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
