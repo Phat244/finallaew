@@ -27,7 +27,7 @@ $comment = $_POST['comment'];
 $link = $_POST['link'];
 
 
-$sql = "INSERT INTO guestbook (Name , Comment , Link) VALUES ('$Name', '$Comment', '$Link')";
+$sql = "INSERT INTO guestbook (Name , Comment , Link) VALUES ('$name', '$comment', '$link')";
 
 
 if (mysqli_query($conn, $sql)) {
@@ -42,7 +42,7 @@ if (mysqli_query($conn, $sql)) {
 mysqli_close($conn);
 if ($done)
 {
-    header("Location: https://phatrain.azurewebsites.net//show.php");
+    header("Location: https://phatrain.azurewebsites.net/show.php");
     exit();
 }
 ?>
