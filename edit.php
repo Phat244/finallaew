@@ -6,10 +6,10 @@ if (mysqli_connect_errno($conn))
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 
-$id=$_REQUEST['ID'];
-$name=$_REQUEST['Name'];
-$comment=$_REQUEST['Comment'];
-$link=$_REQUEST['Link'];
+$id=$_REQUEST['id'];
+$name=$_REQUEST['name'];
+$comment=$_REQUEST['comment'];
+$link=$_REQUEST['link'];
 
 
 
