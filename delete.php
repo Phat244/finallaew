@@ -28,8 +28,7 @@ if ($conn->query($sql) === TRUE) {
           <button type="submit" class="btn btn-danger">Yes</button>
           </form>');
   if ($conn->query($sql) === TRUE) {
-  echo (' <form method="get" action="show.php">
-          <button type="submit" class="btn btn-danger">No</button>
+  echo (' <button type="submit" class="btn btn-danger">No</button>
           </form>');
  
 } else {
