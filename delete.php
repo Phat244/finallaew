@@ -23,9 +23,12 @@ if (mysqli_connect_errno($conn))
 $id=$_REQUEST['id'];
 $sql = "DELETE FROM guestbook WHERE ID=$id"; 
 if ($conn->query($sql) === TRUE) {
-  echo ('<div class="container"><h1 class="display-1">Delete!!</h1></div>');
+  echo ('<div class="container"><h1 class="display-1">Do you really want to delete? </h1></div>');
   echo (' <form method="get" action="show.php">
-          <button type="submit" class="btn btn-danger">Continue</button>
+          <button type="submit" class="btn btn-danger">Yes</button>
+          </form>');
+  echo (' <form method="get" action="show.php">
+          <button type="submit" class="btn btn-danger">No</button>
           </form>');
 } else {
   echo "Error deleting record: " . $conn->error;
