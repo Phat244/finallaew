@@ -14,7 +14,7 @@
   <div class="container">
   <?php
 $conn = mysqli_init();
-mysqli_real_connect($conn,'finallaew.mysql.database.azure.com', 'rainy_dacht@finallaew', 'Phat272829', 'ITFLab' , 3306);
+mysqli_real_connect($conn, 'finallaew.mysql.database.azure.com', 'rainy_dacht@finallaew', 'Phat272829', 'ITFLab', 3306);
 if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
@@ -23,7 +23,7 @@ if (mysqli_connect_errno($conn))
 $id=$_REQUEST['id'];
 $sql = "DELETE FROM guestbook WHERE ID=$id"; 
 if ($conn->query($sql) === TRUE) {
-  echo ('<div class="container"><h1 class="display-1">Do you really want to delete?</h1></div>');
+  echo ('<div class="container"><h1 class="display-1">Delete!!</h1></div>');
   echo (' <form method="get" action="show.php">
           <button type="submit" class="btn btn-danger">Continue</button>
           </form>');
