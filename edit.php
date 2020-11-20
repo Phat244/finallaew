@@ -6,10 +6,10 @@ if (mysqli_connect_errno($conn))
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 
-$id=$_REQUEST['id'];
-$name=$_REQUEST['name'];
-$comment=$_REQUEST['comment'];
-$link=$_REQUEST['link'];
+$id=$_REQUEST['ID'];
+$name=$_REQUEST['Name'];
+$comment=$_REQUEST['Comment'];
+$link=$_REQUEST['Link'];
 
 
 
@@ -53,15 +53,15 @@ $conn->close();
           <br>
           <br>
         <div class="container">
-            <h1 class="display-1">LAB Database Update</h1>
+            <h1 class="display-1">Edit & Update</h1>
         </div>
 
         <div class="container">
             <form action = "update.php" method = "post" id="CommentForm" >
                 <input type="hidden" name = "id" id="idName" value=<?php echo $id;?>>
                 <div class="form-group">
-                  <label for="your name">Name</label>
-                  <input type="text" class="form-control" name = "name" id="idName" placeholder="Enter name" value=<?php echo $name;?>>
+                  <label for="your name">Name<input type="text" class="form-control" name = "name" id="idName" placeholder="Enter name" value=<?php echo $name;?></label>
+<!--                   <input type="text" class="form-control" name = "name" id="idName" placeholder="Enter name" value=<?php echo $name;?>> -->
                 </div>
                 <div class="form-group">
                   <label for="commmant">Comment</label>
