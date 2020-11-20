@@ -39,15 +39,15 @@
             <form action = "insert.php" method = "post" id="CommentForm" >
                 <div class="form-group">
                   <label for="your name">Name</label>
-                  <input type="text" class="form-control" name = "name" id="idName" placeholder="Enter name">
+                  <input type="text" class="form-control" name = "Name" id="idName" placeholder="Enter name">
                 </div>
                 <div class="form-group">
                   <label for="commmant">Comment</label>
-                  <textarea class="form-control" name = "comment" id="idComment" placeholder="Enter Comment" rows="3"></textarea>
+                  <textarea class="form-control" name = "Comment" id="idComment" placeholder="Enter Comment" rows="3"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="Link">Link</label>
-                    <input type="text" class="form-control" name = "link" id="idLink" placeholder="Enter Link">
+                    <input type="text" class="form-control" name = "Link" id="idLink" placeholder="Enter Link">
                   </div>
                 <button type="submit" class="btn btn-primary mb-2">Confirm</button>
               </form>
