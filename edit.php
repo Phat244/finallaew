@@ -60,8 +60,7 @@ $conn->close();
             <form action = "update.php" method = "post" id="CommentForm" >
                 <input type="hidden" name = "id" id="idName" value=<?php echo $id;?>>
                 <div class="form-group">
-                  <label for="your name">Name<input type="text" class="form-control" name = "name" id="idName" placeholder="Enter name" value=<?php echo $name;?></label>
-<!--                   <input type="text" class="form-control" name = "name" id="idName" placeholder="Enter name" value=<?php echo $name;?>> -->
+                  <label for="your name">Name<input type="text" class="form-control" name = "name" id="idName" placeholder="Enter name" value=<?php echo $name;?>>
                 </div>
                 <div class="form-group">
                   <label for="commmant">Comment</label>
