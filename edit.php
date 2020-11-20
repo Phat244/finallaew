@@ -55,6 +55,7 @@ $conn->close();
         <div class="container">
             <h1 class="display-1">Edit & Update</h1>
         </div>
+        
 
         <div class="container">
             <form action = "update.php" method = "post" id="CommentForm" >
